@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swxft Studios - Authentication</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="auth-container">
+    <div class="brand-header">
+      <h1>Swxft Studios</h1>
+      <p id="auth-subtitle">Welcome back! Please login to your account.</p>
+    </div>
+
+    <!-- LOGIN FORM -->
+    <div id="login-box" class="auth-box">
+      <h2>Login</h2>
+      <form id="login-form">
+        <div class="input-group">
+          <label for="login-email">Email</label>
+          <input type="email" id="login-email" required placeholder="Enter your email">
+        </div>
+        
+        <div class="input-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" required placeholder="Enter your password">
+        </div>
+
+        <div class="form-actions">
+          <a href="#" class="forgot-link">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Login</button>
+        <button type="button" class="btn btn-secondary guest-btn">Continue As Guest</button>
+      </form>
+      
+      <p class="switch-text">Don't have an account? <a href="#" id="go-to-signup">Sign Up</a></p>
+    </div>
+
+    <!-- SIGN UP FORM (Hidden by default) -->
+    <div id="signup-box" class="auth-box hidden">
+      <h2>Sign Up</h2>
+      <form id="signup-form">
+        <div class="input-row">
+          <div class="input-group">
+            <label for="signup-firstname">First Name</label>
+            <input type="text" id="signup-firstname" required placeholder="John">
+          </div>
+          <div class="input-group">
+            <label for="signup-lastname">Last Name <span class="optional">(Optional)</span></label>
+            <input type="text" id="signup-lastname" placeholder="Doe">
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="signup-email">Email</label>
+          <input type="email" id="signup-email" required placeholder="name@example.com">
+        </div>
+
+        <div class="input-row">
+          <div class="input-group">
+            <label for="signup-password">Password</label>
+            <input type="password" id="signup-password" required placeholder="Create password">
+          </div>
+          <div class="input-group">
+            <label for="signup-confirm">Confirm Password</label>
+            <input type="password" id="signup-confirm" required placeholder="Repeat password">
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="signup-phone">Phone Number <span class="optional">(Optional)</span></label>
+          <input type="tel" id="signup-phone" placeholder="(555) 000-0000">
+        </div>
+
+        <div class="input-group">
+          <label for="signup-country">Country <span class="optional">(Optional)</span></label>
+          <select id="signup-country">
+            <option value="">Select your country</option>
+            <option value="CA">Canada</option>
+            <option value="US">United States</option>
+            <option value="UK">United Kingdom</option>
+            <option value="AU">Australia</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+        <button type="button" class="btn btn-secondary guest-btn">Continue As Guest</button>
+      </form>
+      
+      <p class="switch-text">Already have an account? <a href="#" id="go-to-login">Login</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
